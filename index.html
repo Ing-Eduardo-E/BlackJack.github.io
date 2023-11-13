@@ -1,0 +1,58 @@
+<!-- 
+Archivo: index.html
+Descripción: Página principal del juego de BlackJack.
+Autor: Ing. Eduardo E. Enríquez R.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <meta name="description" content="Juego de BlackJack" />
+    <meta name="author" content="Ing. Eduardo E. Enríquez R." />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">BlackJack</h1>
+    </header>
+    <main class="main">
+      <section class="main__buttons">
+        <button
+          type="button"
+          name="button--newGame"
+          class="buttons__button--newGame"
+        >
+          Nuevo Juego
+        </button>
+        <button
+          type="button"
+          name="button--askCard"
+          class="buttons__button--askCard"
+        >
+          Pedir Carta
+        </button>
+        <button type="button" name="button--stop" class="buttons__button--stop">
+          Paso
+        </button>
+      </section>
+      <section class="main__user">
+        <h1 class="user__title">Jugador - <small class="score__user">0</small></h1>
+        <div class="user__cards" id="card">
+          <!-- <img src="./assets/cartas/2C.png" alt="carta" class="card" />
+          <img src="./assets/cartas/2C.png" alt="carta" class="card" />
+          <img src="./assets/cartas/2C.png" alt="carta" class="card" /> -->
+        </div>
+      </section>
+      <section class="main__computer">
+        <h1 class="user__title">Computadora - <small class="score__computer">0</small></h1>
+        <div class="computer__cards">
+          
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/juego.js"></script>
+  </body>
+</html>

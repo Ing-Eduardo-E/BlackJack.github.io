@@ -1,0 +1,126 @@
+/**
+ * Estilos CSS para el juego de BlackJack.
+ * 
+ * Este archivo contiene los estilos globales para el juego, incluyendo la eliminación de los estilos por defecto,
+ * los estilos para el encabezado, los botones, las cartas del usuario y de la computadora, y los estilos para la
+ * vista móvil.
+ * 
+ */
+/*eliminar estilos por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*estilos globales*/
+body {
+  font-family: sans-serif;
+  background-color: seagreen;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.527);
+  width: 100%;
+  height: 50px;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.main__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main__buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: white;
+  white-space: nowrap;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: yellowgreen;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.main__buttons button:hover {
+  background-color: olivedrab;
+}
+.main__user,
+.main__computer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 100%;
+  height: 250px;
+}
+
+.user__title,
+.computer__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.user__cards,
+.computer__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  position: relative;
+  margin-left: -50px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.527);
+  width: 100px;
+  height: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .main__buttons {
+    flex-direction: column;
+  }
+  .main__buttons button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
